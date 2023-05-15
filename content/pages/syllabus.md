@@ -41,43 +41,46 @@ Lecture # and Topics
 {{< thclose >}}{{< thopen >}}
 Key Dates
 {{< thclose >}}{{< trclose >}}{{< theadclose >}}{{< tbodyopen >}}{{< tropen >}}{{< tdopen >}}
-Lecture 1 Part 1: Introduction               
+Lecture 1 Part 1: Overview, Applications, and Motivation                
 Lecture 1 Part 2: Derivatives as Linear Operators
 {{< tdclose >}}{{< tdopen >}}
  
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 2 Part 0: Examples of Linear and Nonlinear Transformations of ℝ² via Images  
-Lecture 2 Part 1: Derivatives as Linear Operators (cont.)              
+Lecture 2 Part 0: Examples of Linear and Nonlinear Transformations of ℝ² via Images   
+Lecture 2 Part 1: Derivatives as Linear Operators (cont.)               
 Lecture 2 Part 2: Two by Two Matrix Jacobians
 {{< tdclose >}}{{< tdopen >}}
 Problem Set 1 out
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 3 Part 1: The Gradient of a Scalar Function of a Vector: Column Vector or Row Vector?            
+Lecture 3 Part 1: Two by Two Matrix Jacobians  (cont.)            
 Lecture 3 Part 2: Finite Difference
 {{< tdclose >}}{{< tdopen >}}
  
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 4 Part 1: The Gradient of the Determinant            
+Lecture 4 Part 1: Generalized Gradients and Inner Products             
 Lecture 4 Part 2: Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation
 {{< tdclose >}}{{< tdopen >}}
 Problem Set 1 due               
 Problem Set 2 out
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 5: Forward and Reverse Automatic Differentiation in a Nutshell
+Lecture 5 Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative?  
+Lecture 5 Part 1: Derivative of Matrix Determinant and Inverse  
+Lecture 5 Part 2: Forward-Mode Automatic Differentiation via Dual Numbers  
+Lecture 5 Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs
 {{< tdclose >}}{{< tdopen >}}
  
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 6 Part 1: Derivatives of Eigenproblems            
-Lecture 6 Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices
+Lecture 6 Part 1: An Introduction to (Local) Sensitivity Analysis for (Ordinary) Differential Equations             
+Lecture 6 Part 2: Calculus of Variations
 {{< tdclose >}}{{< tdopen >}}
  
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 7 Part 1: Hessian Matrices (cont.)            
+Lecture 7 Part 1: Derivatives of Random Functions              
 Lecture 7 Part 2: Backpropagation through Back Substitution with a Backslash
 {{< tdclose >}}{{< tdopen >}}
 Problem Set 2 due
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
-Lecture 8 Part 1: Hessian Matrices (cont.)            
+Lecture 8 Part 1: Hessian Matrices (cont.)             
 Lecture 8 Part 2: Differentiable Programming and Neural Differential Equations
 {{< tdclose >}}{{< tdopen >}}
  
