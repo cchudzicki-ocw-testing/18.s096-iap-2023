@@ -105,7 +105,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: Hessian Matrices (cont.) (PDF)
+- Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
 - Part 2: [Backpropagation through Back Substitution with a Backslash (PDF)](https://github.com/mitmath/matrixcalc/blob/main/backprop_poster.pdf)
 
 ### Further Readings (Part 1):
