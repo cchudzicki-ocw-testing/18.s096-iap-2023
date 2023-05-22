@@ -9,8 +9,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: {{% resource_link "563ca6c0-9f9e-4974-8994-6ad8ce50438d" "Introduction (PDF)" %}}
-- Part 2: Derivatives as Linear Operators (PDF)
+- Part 1: Overview, Applications, and Motivation (PDF)
+- Part 2: Derivatives as Linear Operators (Paige?)
 
 ### Further Readings:
 
@@ -23,8 +23,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 0: Examples of Linear and Nonlinear Transformations of ℝ² via Images
-- Part 1: Derivatives as Linear Operators (cont.) (PDF)
+- Part 0: [Examples of Linear and Nonlinear Transformations of ℝ² via Images (Try it Online)](https://mit-c25.netlify.app/notebooks/1_hyperbolic_corgi)
+- Part 1: Derivatives as Linear Operators (continued) (Paige?)
 - Part 2: [Two by Two Matrix Jacobians (html)](https://rawcdn.githack.com/mitmath/matrixcalc/7340d2a7d40e6548a5ca0945ecae96cbac659929/2x2Jacobians.jl.html) ({{% resource_link "5f00501e-fb3c-48f9-a50d-d0c93bb377dc" "download the zip file" %}}) ([pluto notebook source code](https://github.com/mitmath/matrixcalc/blob/main/2x2Jacobians.jl)) ({{% resource_link "0c0bb241-5d3f-4acb-a96d-6630947a841d" "download the source code zip file" %}})
 
 ### Further Readings:
