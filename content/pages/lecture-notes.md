@@ -25,7 +25,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 - Part 0: [Examples of Linear and Nonlinear Transformations of ℝ² via Images (Try it Online)](https://mit-c25.netlify.app/notebooks/1_hyperbolic_corgi)
 - Part 1: Derivatives as Linear Operators (continued) (Paige?)
-- Part 2: [Two by Two Matrix Jacobians (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html); [(Pluto Notebook Source Code)](https://github.com/mitmath/matrixcalc/blob/main/notes/2x2Jacobians.jl)
+- Part 2: Matrix Jacobians via [Vectorization](https://en.wikipedia.org/wiki/Vectorization_(mathematics)); [Two by Two Matrix Jacobians (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html); [(Pluto Notebook Source Code)](https://github.com/mitmath/matrixcalc/blob/main/notes/2x2Jacobians.jl)
 
 ### Further Readings:
 
