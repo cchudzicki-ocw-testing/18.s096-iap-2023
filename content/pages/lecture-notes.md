@@ -25,7 +25,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 - Part 0: [Examples of Linear and Nonlinear Transformations of ℝ² via Images (Try it Online)](https://mit-c25.netlify.app/notebooks/1_hyperbolic_corgi)
 - Part 1: Derivatives as Linear Operators (continued) (Paige?)
-- Part 2: [Two by Two Matrix Jacobians (html)](https://rawcdn.githack.com/mitmath/matrixcalc/7340d2a7d40e6548a5ca0945ecae96cbac659929/2x2Jacobians.jl.html) ({{% resource_link "5f00501e-fb3c-48f9-a50d-d0c93bb377dc" "download the zip file" %}}) ([pluto notebook source code](https://github.com/mitmath/matrixcalc/blob/main/2x2Jacobians.jl)) ({{% resource_link "0c0bb241-5d3f-4acb-a96d-6630947a841d" "download the source code zip file" %}})
+- Part 2: [Two by Two Matrix Jacobians (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html); [(Pluto Notebook Source Code)](https://github.com/mitmath/matrixcalc/blob/main/notes/2x2Jacobians.jl)
 
 ### Further Readings:
 
@@ -38,8 +38,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: {{% resource_link "e8eecb54-8a16-42ef-a24d-745cbf9451e3" "The Gradient of a Scalar Function of a Vector: Column Vector or Row Vector? (PDF)" %}}
-- Part 2: [Finite Difference (Jupyter notebook)](https://nbviewer.org/urls/ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2022/fd_checks.ipynb) ({{% resource_link "d9e83bd3-6b99-44b8-98c4-7ad59ffb2f4c" "download \"Finite Difference\" zip file" %}})
+- Part 1: [Two by Two Matrix Jacobians (continued) (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html)
+- Part 2: [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2022/fd_checks.ipynb)
 
 ### Further Readings:
 
@@ -54,8 +54,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: [The Gradient of the Determinant (html)](https://rawcdn.githack.com/mitmath/matrixcalc/c97512521a9ff63802454ee258f1759c45f7d8b6/determinant_and_inverse.html) ({{% resource_link "5153711d-d113-46cb-8df6-e7e20a7f78a2" "download the zip file" %}}) ([Julia source](https://github.com/mitmath/matrixcalc/blob/main/determinant_and_inverse.jl)) ({{% resource_link "6cd714af-b338-40c7-a3a0-7d570503a662" "download Julia source zip file" %}})
-- Part 2: {{% resource_link "ed4afe03-6d76-495e-872b-cf5c194f3d03" "Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation (PDF)" %}}
+- Part 1: Generalized Gradients and Inner Products (Paige?)
+- Part 2: Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation (PDF)
 
 ### Further Readings (Part 1):
 
@@ -74,7 +74,10 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- [Forward and Reverse Automatic Differentiation in a Nutshell](https://rawcdn.githack.com/mitmath/matrixcalc/e90417f46a20bec6d9c743c6b7bf5b178e77913a/automatic_differentiation_done_quick.html) (guest lecture by [Dr. Chris Rackauckas](https://chrisrackauckas.com/)) ({{% resource_link "16c346e3-c441-411e-b9a5-a3bbb8bf71d1" "download the zip file" %}})
+- Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? (Paige?)
+- Part 1: [Derivative of Matrix Determinant and Inverse (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/b08435612045b17745707f03900e4e4187a6f489/notes/determinant_and_inverse.html)
+- Part 2: [Forward-Mode Automatic Differentiation via Dual Numbers (Jupyter Notebook)](https://github.com/mitmath/matrixcalc/blob/main/notes/AutoDiff.ipynb)
+- Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (Paige?)
 
 ### Further Readings:
 
@@ -86,8 +89,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: [Derivatives of Eigenproblems (html)](https://rawcdn.githack.com/mitmath/matrixcalc/61a7b3e0cbebd0ccdc126fbe831d1398154e272b/symeig.jl.html) ({{% resource_link "4c0529a7-9649-4d68-9617-399fce0743dc" "download the zip file" %}}) ([Julia source](https://github.com/mitmath/matrixcalc/blob/main/symeig.jl)) ({{% resource_link "4b3b3a58-f350-4ec8-a621-49d634341796" "download Julia source zip file" %}})
-- Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices (PDF)
+- Part 1: An Introduction to (Local) Sensitivity Analysis for (Ordinary) Differential Equations (PDF) (Courtesy of Frank Schäfer. Used with permission.)
+- Part 2: Calculus of Variations (Paige?)
 
 ### Further Readings (Part 1):
 
@@ -106,7 +109,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 ### Lecture Notes
 
 - Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
-- Part 2: [Backpropagation through Back Substitution with a Backslash (PDF)](https://github.com/mitmath/matrixcalc/blob/main/backprop_poster.pdf)
+- Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices (Paige?)
 
 ### Further Readings (Part 1):
 
@@ -123,8 +126,8 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: Hessian Matrices (cont.) (PDF)
-- Part 2: [Differentiable Programming and Neural Differential Equations](https://rawcdn.githack.com/mitmath/18337/7b0e890e1211bfa253782f7862389aeaa321e8d7/lecture11/adjoints.html) (guest lecture by [Dr. Chris Rackauckas](https://chrisrackauckas.com/))
+- Part 1: Derivatives of Eigenproblems 
+- Part 2: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (continued from Lecture 5) (Paige?) and [Computations as Trees (HTML)](https://simeonschaub.github.io/ReverseModePluto/notebook.html)
 
 ### Further Readings (Part 1):
 
