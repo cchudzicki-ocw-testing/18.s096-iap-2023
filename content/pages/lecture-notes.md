@@ -9,8 +9,9 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline：
 
-- Part 1: Overview, applications, and motivation.
-- Part 2: Re-thinking derivatives as linear operators: f(x+dx)-f(x)=df=f′(x)\[dx\] — f′ is the [linear operator](https://en.wikipedia.org/wiki/Linear_map) that gives the change df in the output from a "tiny" change dx in the inputs, to first order in dx (i.e. dropping higher-order terms). When we have a scalar function f(x)∈ℝ of vector inputs x∈ℝⁿ, then this gives us a "row vector" f′(x) since f′(x)dx is a scalar, which we interpret as the transpose of the gradient ∇f (which we call a "column" vector), i.e. **df = (∇f)⋅dx = (∇f)ᵀdx**. When we have a vector function f(x)∈ℝᵐ of vector inputs x∈ℝⁿ, then f'(x) is a linear operator that takes n inputs to m outputs, which we can think of as an m×n matrix called the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant) (typically covered only superficially in [*18.02 Multivariable Calculus*](https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/).)
+**Part 1:** Overview, applications, and motivation.
+
+**Part 2:** Re-thinking derivatives as linear operators: f(x+dx)-f(x)=df=f′(x)\[dx\] — f′ is the [linear operator](https://en.wikipedia.org/wiki/Linear_map) that gives the change df in the output from a "tiny" change dx in the inputs, to first order in dx (i.e. dropping higher-order terms). When we have a scalar function f(x)∈ℝ of vector inputs x∈ℝⁿ, then this gives us a "row vector" f′(x) since f′(x)dx is a scalar, which we interpret as the transpose of the gradient ∇f (which we call a "column" vector), i.e. **df = (∇f)⋅dx = (∇f)ᵀdx**. When we have a vector function f(x)∈ℝᵐ of vector inputs x∈ℝⁿ, then f'(x) is a linear operator that takes n inputs to m outputs, which we can think of as an m×n matrix called the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant) (typically covered only superficially in [*18.02 Multivariable Calculus*](https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/).)
 
 ### Lecture Notes
 
@@ -22,14 +23,15 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 - [matrixcalculus.org](http://www.matrixcalculus.org/) is a fun site to play with derivatives of matrix and vector functions. 
 - [*The Matrix Cookbook* (PDF)](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) has a lot of formulas for these derivatives, but no derivations.
 - Notes on [Vector and Matrix Differentiation (PDF)](https://cdn-uploads.piazza.com/paste/j779e63owl53k6/04b2cb8c2f300212d723bea822a6b856085b28e28ca9debc75a05761a436499c/6.S087_Lecture_2.pdf) are helpful.
-- **Fancier math**: The perspective of derivatives as linear operators is sometimes called a [Fréchet derivative](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative) and you can find lots of very abstract (what I'm calling "fancy") presentations of this online, chock full of weird terminology whose purpose is basically to generalize the concept to weird types of vector spaces. The "little-o notation" o(δx) we're using here for "infinitesimal asymptotics" is closely related to the [Big *O* notation](https://en.wikipedia.org/wiki/Big_O_notation) used in computer science, but in computer science people are typically taking the limit as the argument (often called "n") becomes very large instead of very small. A fancy name for a row vector is a "covector" or [linear form](https://en.wikipedia.org/wiki/Linear_form), and the fancy version of the relationship between row and column vectors is the [Riesz representation theorem](https://en.wikipedia.org/wiki/Riesz_representation_theorem), but until you get to non-Euclidean geometry you may be happier thinking of a row vector as the transpose of a column vector.
+- **Fancier math:** The perspective of derivatives as linear operators is sometimes called a [Fréchet derivative](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative) and you can find lots of very abstract (what I'm calling "fancy") presentations of this online, chock full of weird terminology whose purpose is basically to generalize the concept to weird types of vector spaces. The "little-o notation" o(δx) we're using here for "infinitesimal asymptotics" is closely related to the [Big *O* notation](https://en.wikipedia.org/wiki/Big_O_notation) used in computer science, but in computer science people are typically taking the limit as the argument (often called "n") becomes very large instead of very small. A fancy name for a row vector is a "covector" or [linear form](https://en.wikipedia.org/wiki/Linear_form), and the fancy version of the relationship between row and column vectors is the [Riesz representation theorem](https://en.wikipedia.org/wiki/Riesz_representation_theorem), but until you get to non-Euclidean geometry you may be happier thinking of a row vector as the transpose of a column vector.
 
 ## Lecture 2
 
 ### Outline：
 
-- Part 1: Continued discussing derivatives as linear operators, starting with Jacobian matrices. Reviewed the sum rule d(f+g)=df+dg, the product rule d(fg) = (df)g+f(dg), and the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where this is a composition of two linear operations, performing h' then g' — g'h' ≠ h'g'!). For functions from vectors to vectors, the chain rule is simply the product of Jacobians. Moreover, as soon as you compose 3 or more functions, it can make a huge difference whether you multiply the Jacobians from left-to-right ("reverse-mode", or "backpropagation", or "adjoint differentiation") or right-to-left ("forward-mode"). Showed, for example, that if you have many inputs but a single output (as is common in machine learning and other types of optimization problem), that it is vastly more efficient to multiply left-to-right than right-to-left, and such "backpropagation algorithms" are a key factor in the practicality of large-scale optimization. Finally, began talking about functions in more general vector spaces, such as functions with **matrix inputs and/or outputs**. For example, considered f(A)=A³, giving d(A³)=f′(A)\[dA\]=A²(dA)+A(dA)A+(dA)A² (≠3A²dA!), and f(A)=A⁻¹, giving d(A⁻¹)=-A⁻¹(dA)A⁻¹.
-- Part 2: Began going into more detail on matrix-valued functions, and their relationship to the "Jacobian matrix" picture. Converting f′(A) to a conventional "Jacobian matrix" in such cases requires converting matrices A into column vectors vec(A), a process called "vectorization" of the matrix (by a common convention: simply stacking the matrix by columns). Linear operators like f′(A)\[dA\]=AdA+dAA can then be expressed as "ordinary" matrices via [Kronecker products](https://en.wikipedia.org/wiki/Kronecker_product).
+**Part 1:** Continued discussing derivatives as linear operators, starting with Jacobian matrices. Reviewed the sum rule d(f+g)=df+dg, the product rule d(fg) = (df)g+f(dg), and the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where this is a composition of two linear operations, performing h' then g' — g'h' ≠ h'g'!). For functions from vectors to vectors, the chain rule is simply the product of Jacobians. Moreover, as soon as you compose 3 or more functions, it can make a huge difference whether you multiply the Jacobians from left-to-right ("reverse-mode", or "backpropagation", or "adjoint differentiation") or right-to-left ("forward-mode"). Showed, for example, that if you have many inputs but a single output (as is common in machine learning and other types of optimization problem), that it is vastly more efficient to multiply left-to-right than right-to-left, and such "backpropagation algorithms" are a key factor in the practicality of large-scale optimization. Finally, began talking about functions in more general vector spaces, such as functions with **matrix inputs and/or outputs**. For example, considered f(A)=A³, giving d(A³)=f′(A)\[dA\]=A²(dA)+A(dA)A+(dA)A² (≠3A²dA!), and f(A)=A⁻¹, giving d(A⁻¹)=-A⁻¹(dA)A⁻¹.
+
+**Part 2:** Began going into more detail on matrix-valued functions, and their relationship to the "Jacobian matrix" picture. Converting f′(A) to a conventional "Jacobian matrix" in such cases requires converting matrices A into column vectors vec(A), a process called "vectorization" of the matrix (by a common convention: simply stacking the matrix by columns). Linear operators like f′(A)\[dA\]=AdA+dAA can then be expressed as "ordinary" matrices via [Kronecker products](https://en.wikipedia.org/wiki/Kronecker_product).
 
 ### Lecture Notes
 
@@ -48,8 +50,9 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline：
 
-- Part 1: Continued from Lecture 2: matrix functions, Jacobians, vectorizations, and Kronecker products. More examples of matrix functions, including LU factorization and 2×2 eigenproblems.
-- Part 2: Finite-difference methods: viewing f(x+δx)–f(x) as an approximation for f'(x)δx on a computer. This is extremely useful as a quick check of a hand-derived derivative (which is very error prone for complicated functions), and can also be used as a replacement for analytical derivatives in a pinch. Analyzed two sources of error: truncation error (from the non-infinitesimal δx) and roundoff error (from the finite precision of computer arithmetic).
+**Part 1:** Continued from Lecture 2: matrix functions, Jacobians, vectorizations, and Kronecker products. More examples of matrix functions, including LU factorization and 2×2 eigenproblems.
+
+**Part 2:** Finite-difference methods: viewing f(x+δx)–f(x) as an approximation for f'(x)δx on a computer. This is extremely useful as a quick check of a hand-derived derivative (which is very error prone for complicated functions), and can also be used as a replacement for analytical derivatives in a pinch. Analyzed two sources of error: truncation error (from the non-infinitesimal δx) and roundoff error (from the finite precision of computer arithmetic).
 
 ### Lecture Notes
 
@@ -69,12 +72,13 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline：
 
-- Part 0: To begin with, spent a few minutes talking about the last few sections of the [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/fd_checks.ipynb) from last lecture: higher-order finite-difference rules and finite differences in higher dimensions (e.g. for gradients).
-- Part 1: Generalizing **gradients** to scalar functions f(x) for x in arbitrary vector spaces x ∈ V. The key thing is that we need not just a vector space, but an **inner product** x⋅y (a "dot product", also denoted ⟨x,y⟩ or ⟨x|y⟩); V is then formally called a [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space). Then, for any scalar function, since df=f'(x)\[dx\] is a linear operator mapping dx∈V to scalars df∈ℝ (a "[linear form](https://en.wikipedia.org/wiki/Linear_form)"), it turns out that it [*must* be a dot product](https://en.wikipedia.org/wiki/Riesz_representation_theorem) of dx with "something", and we call that "something" the gradient! That is, once we define a dot product, then for any scalar function f(x) we can define ∇f by f'(x)\[dx\]=∇f⋅dx. So ∇f is always something with the same "shape" as x (the [steepest-ascent](https://math.stackexchange.com/questions/223252/why-is-gradient-the-direction-of-steepest-ascent) direction).
+**Part 0:** To begin with, spent a few minutes talking about the last few sections of the [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/fd_checks.ipynb) from last lecture: higher-order finite-difference rules and finite differences in higher dimensions (e.g. for gradients).
+
+**Part 1:** Generalizing **gradients** to scalar functions f(x) for x in arbitrary vector spaces x ∈ V. The key thing is that we need not just a vector space, but an **inner product** x⋅y (a "dot product", also denoted ⟨x,y⟩ or ⟨x|y⟩); V is then formally called a [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space). Then, for any scalar function, since df=f'(x)\[dx\] is a linear operator mapping dx∈V to scalars df∈ℝ (a "[linear form](https://en.wikipedia.org/wiki/Linear_form)"), it turns out that it [*must* be a dot product](https://en.wikipedia.org/wiki/Riesz_representation_theorem) of dx with "something", and we call that "something" the gradient! That is, once we define a dot product, then for any scalar function f(x) we can define ∇f by f'(x)\[dx\]=∇f⋅dx. So ∇f is always something with the same "shape" as x (the [steepest-ascent](https://math.stackexchange.com/questions/223252/why-is-gradient-the-direction-of-steepest-ascent) direction).
 
 Defined the most obvious inner product of m×n matrices: the [Frobenius inner product](https://en.wikipedia.org/wiki/Frobenius_inner_product) A⋅B=`sum(A .* B)`\=trace(AᵀB)=vec(A)ᵀvec(B), the sum of the products of the matrix entries. This also gives us the "Frobenius norm" ‖A‖²=A⋅A=trace(AᵀA)=‖vec(A)‖², the square root of the sum of the squares of the entries. Using this, we can now take the derivatives of various scalar functions of matrices, e.g. we considered
 
-- Part 2: 
+**Part 2:** 
 
 ### Lecture Notes
 
@@ -98,8 +102,9 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Outline：
 
-- Part 1: 
-- Part 2: 
+**Part 1:** 
+
+**Part 2:** 
 
 ### Lecture Notes
 
@@ -118,8 +123,9 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Outline：
 
-- Part 1: 
-- Part 2: 
+**Part 1:** 
+
+**Part 2:** 
 
 ### Lecture Notes
 
@@ -142,8 +148,9 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Outline：
 
-- Part 1: 
-- Part 2: 
+**Part 1:** 
+
+**Part 2:** 
 
 ### Lecture Notes
 
@@ -165,8 +172,9 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Outline：
 
-- Part 1: 
-- Part 2: 
+**Part 1:** 
+
+**Part 2:** 
 
 ### Lecture Notes
 
