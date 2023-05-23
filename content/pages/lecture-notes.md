@@ -7,6 +7,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 ---
 ## Lecture 1
 
+### Outline：
+
+- Part 1: 
+- Part 2: 
+
 ### Lecture Notes
 
 - Part 1: Overview, Applications, and Motivation (PDF)
@@ -20,6 +25,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 - **Fancier math**: The perspective of derivatives as linear operators is sometimes called a [Fréchet derivative](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative) and you can find lots of very abstract (what I'm calling "fancy") presentations of this online, chock full of weird terminology whose purpose is basically to generalize the concept to weird types of vector spaces. The "little-o notation" o(δx) we're using here for "infinitesimal asymptotics" is closely related to the [Big *O* notation](https://en.wikipedia.org/wiki/Big_O_notation) used in computer science, but in computer science people are typically taking the limit as the argument (often called "n") becomes very *large* instead of very small. A fancy name for a row vector is a "covector" or [linear form](https://en.wikipedia.org/wiki/Linear_form), and the fancy version of the relationship between row and column vectors is the [Riesz representation theorem](https://en.wikipedia.org/wiki/Riesz_representation_theorem), but until you get to non-Euclidean geometry you may be happier thinking of a row vector as the transpose of a column vector.
 
 ## Lecture 2
+
+### Outline：
+
+- Part 1: 
+- Part 2: 
 
 ### Lecture Notes
 
@@ -36,6 +46,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ## Lecture 3
 
+### Outline：
+
+- Part 1: 
+- Part 2: 
+
 ### Lecture Notes
 
 - Part 1: [Two by Two Matrix Jacobians (continued) (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html)
@@ -51,6 +66,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 - The Julia [FiniteDifferences.jl](https://github.com/JuliaDiff/FiniteDifferences.jl) package provides lots of algorithms to compute finite-difference approximations; a particularly robust and powerful way to obtain high accuracy is to employ [Richardson extrapolation](https://github.com/JuliaDiff/FiniteDifferences.jl#richardson-extrapolation) to smaller and smaller δx. If you make δx too small, the finite precision (#digits) of [floating-point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic) leads to [catastrophic cancellation](https://en.wikipedia.org/wiki/Catastrophic_cancellation) errors.
 
 ## Lecture 4
+
+### Outline：
+
+- Part 1: 
+- Part 2: 
 
 ### Lecture Notes
 
@@ -72,6 +92,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ## Lecture 5
 
+### Outline：
+
+- Part 1: 
+- Part 2: 
+
 ### Lecture Notes
 
 - Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? (Paige?)
@@ -86,6 +111,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 - Implementing automatic reverse-mode AD is much more complicated than defining a new number type, unfortunately, and involves a lot more intricacies of compiler technology. See also Chris's blog post on [Engineering Trade-Offs in Automatic Differentiation](https://www.stochasticlifestyle.com/engineering-trade-offs-in-automatic-differentiation-from-tensorflow-and-pytorch-to-jax-and-julia/), and Chris Rackauckas's discussion post on [AD limitations](https://discourse.julialang.org/t/open-discussion-on-the-state-of-differentiable-physics-in-julia/72900/2).
 
 ## Lecture 6
+
+### Outline：
+
+- Part 1: 
+- Part 2: 
 
 ### Lecture Notes
 
@@ -106,6 +136,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ## Lecture 7
 
+### Outline：
+
+- Part 1: 
+- Part 2: 
+
 ### Lecture Notes
 
 - Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
@@ -123,6 +158,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 - See Columbia University's [Course Notes on Computational Graphs, and Backpropagation (PDF)](http://www.cs.columbia.edu/~mcollins/ff2.pdf) for a more formal approach.
 
 ## Lecture 8
+
+### Outline：
+
+- Part 1: 
+- Part 2: 
 
 ### Lecture Notes
 
