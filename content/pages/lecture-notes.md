@@ -16,7 +16,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 ### Lecture Notes
 
 - Part 1: Introduction (PDF)
-- Part 2: Derivatives as Linear Operators (Paige?)
+- Part 2: Derivatives as Linear Operators \[notes not available\]
 
 ### Further Readings
 
@@ -36,7 +36,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 ### Lecture Notes
 
 - Part 0: [Examples of Linear and Nonlinear Transformations of ℝ² via Images (Try it Online)](https://mit-c25.netlify.app/notebooks/1_hyperbolic_corgi)
-- Part 1: Derivatives as Linear Operators (continued) (Paige?)
+- Part 1: Derivatives as Linear Operators (continued) \[notes not available\]
 - Part 2: Matrix Jacobians via [Vectorization](https://en.wikipedia.org/wiki/Vectorization_(mathematics)); [Two by Two Matrix Jacobians (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html); [(Pluto Notebook Source Code)](https://github.com/mitmath/matrixcalc/blob/main/notes/2x2Jacobians.jl)
 
 ### Further Readings
@@ -86,7 +86,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 1: Generalized Gradients and Inner Products (Paige?)
+- Part 1: Generalized Gradients and Inner Products \[notes not available\]
 - Part 2: Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation (PDF)
 
 ### Further Readings (Part 2)
@@ -100,10 +100,10 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? (Paige?)
+- Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? \[notes not available\]
 - Part 1: [Derivative of Matrix Determinant and Inverse (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/b08435612045b17745707f03900e4e4187a6f489/notes/determinant_and_inverse.html)
 - Part 2: [Forward-Mode Automatic Differentiation via Dual Numbers (Jupyter Notebook)](https://github.com/mitmath/matrixcalc/blob/main/notes/AutoDiff.ipynb)
-- Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (Paige?)
+- Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs \[notes not available\]
 
 ### Further Readings (Part 1)
 
@@ -124,7 +124,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 ### Lecture Notes
 
 - Part 1: An Introduction to (Local) Sensitivity Analysis for (Ordinary) Differential Equations (PDF) (Courtesy of Frank Schäfer. Used with permission.)
-- Part 2: Calculus of Variations (Paige?)
+- Part 2: Calculus of Variations \[notes not available\]
 
 ### Further Readings (Part 1)
 
@@ -149,7 +149,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 ### Lecture Notes
 
 - Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
-- Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices (Paige?)
+- Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices \[notes not available\]
 
 ### Further Readings (Part 1)
 
@@ -167,7 +167,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 ### Lecture Notes
 
 - Part 1: Derivatives of Eigenproblems 
-- Part 2: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (continued from Lecture 5) (Paige?) and [Computations as Trees (HTML)](https://simeonschaub.github.io/ReverseModePluto/notebook.html)
+- Part 2: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (continued from Lecture 5) \[notes not available\] and [Computations as Trees (HTML)](https://simeonschaub.github.io/ReverseModePluto/notebook.html)
 
 ### Further Readings (Part 1)
 
