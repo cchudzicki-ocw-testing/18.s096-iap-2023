@@ -142,12 +142,6 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ## Lecture 7
 
-### Outline
-
-**Part 1:** 
-
-**Part 2:** 
-
 ### Lecture Notes
 
 - Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
