@@ -69,6 +69,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline：
 
+- Part 0: To begin with, spent a few minutes talking about the last few sections of the [finite-difference notes](https://github.com/mitmath/matrixcalc/blob/main/notes/Finite%20difference%20checks.ipynb)) from last lecture: higher-order finite-difference rules and finite differences in higher dimensions (e.g. for gradients).
 - Part 1: 
 - Part 2: 
 
