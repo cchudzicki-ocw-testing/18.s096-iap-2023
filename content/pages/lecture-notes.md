@@ -54,7 +54,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 ### Lecture Notes
 
 - Part 1: [Two by Two Matrix Jacobians (continued) (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html)
-- Part 2: [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2022/fd_checks.ipynb)
+- Part 2: [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/fd_checks.ipynb)
 
 ### Further Readings:
 
@@ -69,8 +69,11 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline：
 
-- Part 0: To begin with, spent a few minutes talking about the last few sections of the [finite-difference notes](https://github.com/mitmath/matrixcalc/blob/main/notes/Finite%20difference%20checks.ipynb)) from last lecture: higher-order finite-difference rules and finite differences in higher dimensions (e.g. for gradients).
-- Part 1: 
+- Part 0: To begin with, spent a few minutes talking about the last few sections of the [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/fd_checks.ipynb) from last lecture: higher-order finite-difference rules and finite differences in higher dimensions (e.g. for gradients).
+- Part 1: Generalizing **gradients** to scalar functions f(x) for x in arbitrary vector spaces x ∈ V. The key thing is that we need not just a vector space, but an **inner product** x⋅y (a "dot product", also denoted ⟨x,y⟩ or ⟨x|y⟩); V is then formally called a [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space). Then, for any scalar function, since df=f'(x)\[dx\] is a linear operator mapping dx∈V to scalars df∈ℝ (a "[linear form](https://en.wikipedia.org/wiki/Linear_form)"), it turns out that it [*must* be a dot product](https://en.wikipedia.org/wiki/Riesz_representation_theorem) of dx with "something", and we call that "something" the gradient! That is, once we define a dot product, then for any scalar function f(x) we can define ∇f by f'(x)\[dx\]=∇f⋅dx. So ∇f is always something with the same "shape" as x (the [steepest-ascent](https://math.stackexchange.com/questions/223252/why-is-gradient-the-direction-of-steepest-ascent) direction).
+
+Defined the most obvious inner product of m×n matrices: the [Frobenius inner product](https://en.wikipedia.org/wiki/Frobenius_inner_product) A⋅B=`sum(A .* B)`\=trace(AᵀB)=vec(A)ᵀvec(B), the sum of the products of the matrix entries. This also gives us the "Frobenius norm" ‖A‖²=A⋅A=trace(AᵀA)=‖vec(A)‖², the square root of the sum of the squares of the entries. Using this, we can now take the derivatives of various scalar functions of matrices, e.g. we considered
+
 - Part 2: 
 
 ### Lecture Notes
