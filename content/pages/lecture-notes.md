@@ -76,9 +76,13 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 **Part 1:** Generalizing **gradients** to scalar functions f(x) for x in arbitrary vector spaces x ∈ V. The key thing is that we need not just a vector space, but an **inner product** x⋅y (a "dot product", also denoted ⟨x,y⟩ or ⟨x|y⟩); V is then formally called a [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space). Then, for any scalar function, since df=f'(x)\[dx\] is a linear operator mapping dx∈V to scalars df∈ℝ (a "[linear form](https://en.wikipedia.org/wiki/Linear_form)"), it turns out that it [*must* be a dot product](https://en.wikipedia.org/wiki/Riesz_representation_theorem) of dx with "something", and we call that "something" the gradient! That is, once we define a dot product, then for any scalar function f(x) we can define ∇f by f'(x)\[dx\]=∇f⋅dx. So ∇f is always something with the same "shape" as x (the [steepest-ascent](https://math.stackexchange.com/questions/223252/why-is-gradient-the-direction-of-steepest-ascent) direction).
 
-Defined the most obvious inner product of m×n matrices: the [Frobenius inner product](https://en.wikipedia.org/wiki/Frobenius_inner_product) A⋅B=`sum(A .* B)`\=trace(AᵀB)=vec(A)ᵀvec(B), the sum of the products of the matrix entries. This also gives us the "Frobenius norm" ‖A‖²=A⋅A=trace(AᵀA)=‖vec(A)‖², the square root of the sum of the squares of the entries. Using this, we can now take the derivatives of various scalar functions of matrices, e.g. we considered
+Defined the most obvious inner product of m×n matrices: the [Frobenius inner product](https://en.wikipedia.org/wiki/Frobenius_inner_product) A⋅B = sum(A.\*B) = trace(AᵀB) = vec(A)ᵀvec(B), the sum of the products of the matrix entries. This also gives us the "Frobenius norm" ‖A‖²=A⋅A=trace(AᵀA)=‖vec(A)‖², the square root of the sum of the squares of the entries. Using this, we can now take the derivatives of various scalar functions of matrices, e.g. we considered
 
-**Part 2:** 
+- f(A)=‖A‖ ⥰ ∇f = A/‖A‖
+- f(A)=xᵀAy ⥰ ∇f = xyᵀ (for constant x, y)
+- f(A)=det(A) ⥰ ∇f = det(A)(A⁻¹)ᵀ = [adjugate](https://en.wikipedia.org/wiki/Adjugate_matrix)(A)ᵀ: we will prove this later
+
+**Part 2:** Applications of derivatives to multivariate root-finding and optimization. A key fact enabling large-scale optimization, i.e. min f(x) where f is a scalar function of *many* parameters x, is that computing ∇f has about the same cost as f, using what is variously called "reverse-mode" or "adjoint" or "backpropagation" differentiation algorithms, which essentially boil down to evaluating the chain rule **left to right**. Went through a few examples of this, oriented more at engineering/physics optimization (and "topology optimization").
 
 ### Lecture Notes
 
