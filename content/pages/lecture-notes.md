@@ -100,7 +100,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? \[notes not available\]
+- Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? (PDF)
 - Part 1: [Derivative of Matrix Determinant and Inverse (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/b08435612045b17745707f03900e4e4187a6f489/notes/determinant_and_inverse.html)
 - Part 2: [Forward-Mode Automatic Differentiation via Dual Numbers (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/autodiff.ipynb)
 - Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (PDF)
