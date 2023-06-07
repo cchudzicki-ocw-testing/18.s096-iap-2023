@@ -118,7 +118,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Further Readings (Part 3)
 
-- See [Backpropagation through Back Substitution with a Backslash](https://github.com/mitmath/matrixcalc/blob/main/notes/backprop_poster.pdf) about backpropagation on graphs, this blog post on [calculus on computational graphs](https://colah.github.io/posts/2015-08-Backprop/) for a gentle review, and Columbia University’s [Course Notes on Computational Graphs, and Backpropagation (PDF)](http://www.cs.columbia.edu/~mcollins/ff2.pdf) for a more formal approach. 
+- See [Backpropagation through Back Substitution with a Backslash (PDF)](https://github.com/mitmath/matrixcalc/blob/main/notes/backprop_poster.pdf) about backpropagation on graphs, this blog post on [calculus on computational graphs](https://colah.github.io/posts/2015-08-Backprop/) for a gentle review, and Columbia University’s [Course Notes on Computational Graphs, and Backpropagation (PDF)](http://www.cs.columbia.edu/~mcollins/ff2.pdf) for a more formal approach. 
 - Implementing automatic reverse-mode AD is much more complicated than defining a new number type, unfortunately, and involves a lot more intricacies of compiler technology. See also Chris Rackauckas's blog post on [Engineering Trade-Offs in Automatic Differentiation: from TensorFlow and PyTorch to Jax and Julia](https://www.stochasticlifestyle.com/engineering-trade-offs-in-automatic-differentiation-from-tensorflow-and-pytorch-to-jax-and-julia/), and Chris's discussion post on [AD limitations](https://discourse.julialang.org/t/open-discussion-on-the-state-of-differentiable-physics-in-julia/72900/2).
 
 ## Lecture 6
@@ -130,7 +130,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Further Readings (Part 1)
 
-- A classic reference on adjoint-method (reverse-mode/backpropagation) differentiation of ODEs (and generalizations thereof), using notation similar to that used today, is [Cao et al (2003)](https://epubs.siam.org/doi/10.1137/S1064827501380630) ([pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.455&rep=rep1&type=pdf)). 
+- A classic reference on adjoint-method (reverse-mode/backpropagation) differentiation of ODEs (and generalizations thereof), using notation similar to that used today, is [Cao et al (2003)](https://epubs.siam.org/doi/10.1137/S1064827501380630) ([Adjoint Sensitivity Analysis for Differential-Algebraic Equations: The Adjoint DAE System and Its Numerical Solution (PDF)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.455&rep=rep1&type=pdf)). 
 - See also the [SciMLSensitivity.jl package](https://docs.sciml.ai/SciMLSensitivity/stable/) for sensitivity analysis with Chris Rackauckas's amazing [DifferentialEquations.jl software suite](https://diffeq.sciml.ai/stable/) for numerical solution of ODEs in Julia, along with his [notes from 18.337](https://rawcdn.githack.com/mitmath/18337/7b0e890e1211bfa253782f7862389aeaa321e8d7/lecture11/adjoints.html). 
 - There is a nice YouTube [lecture on adjoint sensitivity of ODEs](https://www.youtube.com/watch?v=k6s2G5MZv-I), again using a similar notation. 
 - A *discrete* version of this process is [adjoint methods for recurrence relations](https://math.mit.edu/~stevenj/18.336/recurrence2.pdf) (MIT course notes), in which case one obtains a reverse-order "adjoint" recurrence relation.
