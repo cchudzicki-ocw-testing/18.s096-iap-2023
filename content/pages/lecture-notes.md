@@ -56,7 +56,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: [Two by Two Matrix Jacobians (continued) (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html)
+- Part 1 (Lecture 2 Part 2 continued): [Two by Two Matrix Jacobians (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/3f6758996e40c5c1070279f89f7f65e76e08003d/notes/2x2Jacobians.jl.html); (Pluto Notebook Source Code)
 - Part 2: [Finite Difference (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/fd_checks.ipynb)
 
 ### Further Readings
@@ -101,7 +101,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 ### Lecture Notes
 
 - Part 0: Norms and Derivatives: Why a Norm of the Input and Output are Needed to Define a Derivative? (PDF)
-- Part 1: [Derivative of Matrix Determinant and Inverse (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/b08435612045b17745707f03900e4e4187a6f489/notes/determinant_and_inverse.html)
+- Part 1: [Derivative of Matrix Determinant and Inverse (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/b08435612045b17745707f03900e4e4187a6f489/notes/determinant_and_inverse.html); (Julia source)
 - Part 2: [Forward-Mode Automatic Differentiation via Dual Numbers (Jupyter Notebook)](https://nbviewer.org/urls/draft.ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/autodiff.ipynb)
 - Part 3: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (PDF)
 
@@ -165,13 +165,13 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 1: Derivatives of Eigenproblems [(html)](https://rawcdn.githack.com/mitmath/matrixcalc/d11b747d70a5d9e1a3da8cdb68a7f8a220d3afae/notes/symeig.jl.html) [(julia source)](https://github.com/mitmath/matrixcalc/blob/main/notes/symeig.jl)
-- Part 2: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (continued from Lecture 5) (PDF) and [Interactive Notebook (HTML)](https://simeonschaub.github.io/ReverseModePluto/notebook.html)
+- Part 1: [Derivatives of Eigenproblems (HTML)](https://rawcdn.githack.com/mitmath/matrixcalc/d11b747d70a5d9e1a3da8cdb68a7f8a220d3afae/notes/symeig.jl.html); (Julia source)
+- Part 2: Forward and Reverse-Mode Automatic Differentiation on Computational Graphs (PDF) \[continued from Lecture 5\] and [Interactive Notebook (HTML)](https://simeonschaub.github.io/ReverseModePluto/notebook.html)
 - Part 3: some topics we didn't cover
 
 ### Further Readings (Part 1)
 
-- Computing derivatives on curved surfaces ("manifolds") is closely related to [tangent spaces](https://en.wikipedia.org/wiki/Tangent_space) in differential geometry. The effect of constraints can also be expressed in terms of [Lagrange multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier), which are useful in expressing optimization problems with constraints (see also chapter 5 of [*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/)   
+- Computing derivatives on curved surfaces ("manifolds") is closely related to [tangent spaces](https://en.wikipedia.org/wiki/Tangent_space) in differential geometry. The effect of constraints can also be expressed in terms of [Lagrange multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier), which are useful in expressing optimization problems with constraints (see also chapter 5 of [*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/)    
       
     by Boyd and Vandenberghe). In physics, first and second derivatives of eigenvalues and first derivatives of eigenvectors are often presented as part of ["time-independent" perturbation theory](https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)#Time-independent_perturbation_theory) in quantum mechanics, or as the [Hellmann–Feynmann theorem](https://en.wikipedia.org/wiki/Hellmann%E2%80%93Feynman_theorem) for the case of dλ. The derivative of an eigenvector involves *all* of the other eigenvectors, but a much simpler "vector–Jacobian product" (involving only a single eigenvector and eigenvalue) can be obtained from left-to-right differentiation of a *scalar function* of an eigenvector, as reviewed in the [18.335 notes on adjoint methods (PDF)](https://github.com/mitmath/18335/blob/spring21/notes/adjoint/adjoint.pdf).
 
