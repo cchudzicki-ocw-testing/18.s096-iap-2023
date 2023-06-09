@@ -15,7 +15,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Lecture Notes
 
-- Part 1: Introduction (PDF)
+- Part 1: {{% resource_link "db5aaa4c-5321-46b2-8ef2-55b2a072adeb" "Introduction (PDF)" %}}
 - Part 2: Derivatives as Linear Operators (PDF)
 
 ### Further Readings
@@ -87,7 +87,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 ### Lecture Notes
 
 - Part 1: Generalized Gradients and Inner Products (PDF)
-- Part 2: Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation (PDF)
+- Part 2: {{% resource_link "f46d4277-f227-44f7-a6dd-7176e7d45df4" "Nonlinear Root-Finding, Optimization, and Adjoint-Method Differentiation (PDF)" %}}
 
 ### Further Readings (Part 2)
 
@@ -125,7 +125,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 1: An Introduction to (Local) Sensitivity Analysis for (Ordinary) Differential Equations (PDF) (Courtesy of Frank Schäfer. Used with permission.)
+- Part 1: {{% resource_link "1a34cc63-b920-4b86-80da-3c0f7566b9d5" "An Introduction to (Local) Sensitivity Analysis for (Ordinary) Differential Equations (PDF)" %}} (Courtesy of Frank Schäfer. Used with permission.)
 - Part 2: Calculus of Variations (PDF)
 
 ### Further Readings (Part 1)
@@ -144,7 +144,7 @@ Defined the most obvious inner product of m×n matrices: the [Frobenius inner pr
 
 ### Lecture Notes
 
-- Part 1: Derivatives of Random Functions (PDF) (Courtesy of Gaurav Arya. Used with permission.)
+- Part 1: {{% resource_link "c66c314f-efc2-4a08-9982-e966fb2400c6" "Derivatives of Random Functions (PDF)" %}} (Courtesy of Gaurav Arya. Used with permission.)
 - Part 2: Second Derivatives, Bilinear Forms, and Hessian Matrices (PDF)
 
 ### Further Readings (Part 1)
