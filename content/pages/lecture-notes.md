@@ -9,7 +9,7 @@ uid: dc60f1da-e984-4045-b07c-af4129d934e0
 
 ### Outline
 
-**Part 1:**            Overview, applications, and motivation.
+**Part 1:**                                                     Overview, applications, and motivation.
 
 **Part 2:** Re-thinking derivatives as linear operators: f(x+dx)-f(x)=df=f′(x)\[dx\] — f′ is the [linear operator](https://en.wikipedia.org/wiki/Linear_map) that gives the change df in the output from a "tiny" change dx in the inputs, to first order in dx (i.e. dropping higher-order terms). When we have a scalar function f(x)∈ℝ of vector inputs x∈ℝⁿ, then this gives us a "row vector" f′(x) since f′(x)dx is a scalar, which we interpret as the transpose of the gradient ∇f (which we call a "column" vector), i.e. **df = (∇f)⋅dx = (∇f)ᵀdx**. When we have a vector function f(x)∈ℝᵐ of vector inputs x∈ℝⁿ, then f'(x) is a linear operator that takes n inputs to m outputs, which we can think of as an m×n matrix called the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant) (typically covered only superficially in [*18.02 Multivariable Calculus*](https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/).)
 
