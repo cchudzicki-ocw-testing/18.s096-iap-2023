@@ -5,6 +5,8 @@ draft: false
 title: Problem Sets
 uid: a7e73205-5887-4af2-b241-f0726443b1b0
 ---
+Problem set 1 due on Lecture 4 and Problem set 2 due on Lecture  7.
+
 {{% resource_link "cbb92b8e-bb9d-4543-8f22-877b7ea83952" "Problem Set 1 (PDF)" %}} ({{% resource_link "c706382e-ab8b-4966-8590-1f14121695ef" "TEX" %}})
 
 {{% resource_link "cac966ef-8403-4899-921d-a6ac53c2c50e" "Problem Set 1 Solutions (PDF)" %}} ({{% resource_link "24996818-5f40-4f1e-b16a-01ffbf1af4b6" "TEX" %}})
