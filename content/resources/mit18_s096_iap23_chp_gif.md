@@ -6,9 +6,9 @@ file: /courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-i
 file_size: 17950
 file_type: image/gif
 image_metadata:
-  caption: ''
+  caption: What is the derivative of determinant *A*? (Image by MIT OpenCourseWare.)
   credit: ''
-  image-alt: ''
+  image-alt: Equation of derivative of determinant A.
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 resourcetype: Image
