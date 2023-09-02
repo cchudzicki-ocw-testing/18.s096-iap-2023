@@ -6,9 +6,11 @@ file: /courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-i
 file_size: 75049
 file_type: image/jpeg
 image_metadata:
-  caption: ''
+  caption: So, you think you know how to take derivatives? (Image courtesy of Prof.
+    Steven G. Johnson.)
   credit: ''
-  image-alt: ''
+  image-alt: The text "So, you think you know how to take derivatives?" surround by
+    derivatives.
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 resourcetype: Image
